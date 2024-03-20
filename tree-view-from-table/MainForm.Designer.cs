@@ -54,7 +54,6 @@
 
         #endregion
 
-        private TreeView treeView1;
         private TreeView treeView;
     }
 }

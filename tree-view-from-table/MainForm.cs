@@ -1,4 +1,6 @@
 
+using System.Diagnostics;
+
 namespace tree_view_from_table
 {
     public partial class MainForm : Form
@@ -33,6 +35,35 @@ namespace tree_view_from_table
                     {
                         traverse = new TreeNode(token);
                         nodes.Add(traverse);
+                    }
+                }
+            }
+
+            foreach (var node in treeView.Descendants())
+            {
+                Debug.WriteLine(node.FullPath);
+            }
+        }
+    }
+    static partial class Extensions
+    {
+        public static IEnumerable<TreeNode> Descendants(this TreeView treeView)
+        {
+            foreach (TreeNode root in treeView.Nodes)
+            {
+                foreach (var node in localTraverseNode(root))
+                {
+                    yield return node;
+                }
+            }
+            IEnumerable<TreeNode> localTraverseNode(TreeNode node)
+            {
+                yield return node;
+                foreach (TreeNode child in node.Nodes)
+                {
+                    foreach (var childNode in localTraverseNode(child))
+                    {
+                        yield return childNode;
                     }
                 }
             }
