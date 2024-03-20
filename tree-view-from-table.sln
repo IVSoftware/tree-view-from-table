@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tree-view-from-table", "tree-view-from-table\tree-view-from-table.csproj", "{348C45B5-26F4-4B86-8C40-EBEE09650749}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{348C45B5-26F4-4B86-8C40-EBEE09650749}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{348C45B5-26F4-4B86-8C40-EBEE09650749}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{348C45B5-26F4-4B86-8C40-EBEE09650749}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{348C45B5-26F4-4B86-8C40-EBEE09650749}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BDBC55D1-9D74-4A47-8272-0EDF7A82B808}
+	EndGlobalSection
+EndGlobal
